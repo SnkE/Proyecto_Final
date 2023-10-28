@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=i.0">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous">
+        </script>
+        <title>Index</title>
+    </head>
+    <header> 
+    
+    <img class="logoAnimation" src="./img/logo.png" alt="Logo">
+    <script>
+
+        setTimeout(()=>{
+                document.querySelector('.logoAnimation').style.display='none';
+                document.querySelector('.blurredBg').style.display='none'; 
+        },3000);                       
+        </script>
+    
+   
+
+        
+        <ul class="contenedorPadre">
+            <ul class="logo">
+                <a href="/"><img src="/img/logo.png" alt=""></a>
+            </ul>
+            <ul class="HeaderPCentro">
+
+                <div class="container">
+                    <div class="search-input-box">
+                        <input type="text" placeholder="¿Qué quieres buscar?" />
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-magnifying-glass icon"> </i>
+                        </a>
+                    </div>
+                </div>
+        
+
+            </ul>
+            <ul class="HeaderPDerecha">
+                 <li><a href="registro.html"><img src="./img/Sesion.png" alt=""></a>Iniciar Sesion</li> 
+                 <li><a href=""><img src="./img/Carrito.png" alt=""></a>Mi Carrito</li>
+            </ul>          
+        </ul>
+
+    
+    </header>      
+    <body>
+<h1><strong><em>Bienvenido</em></strong></h1>
+<div class="slider">
+     <div class="swiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/Inicio2.jpg"></div>
+        <div class="swiper-slide"><img src="./img/Inicio1.jpg"></div>
+        <div class="swiper-slide"><img src="./img/Inicio3.jpg"></div>
+    </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  </div>
+</div>
+          
+<div class="blurredBg"></div>
+
+        <footer class="footer">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                            <img src="/img/logo.png" alt="Logo" height="50" width="50" ><label>FULL FICTION</label>       
+                    </figure> 
+                    <div class="Ubicacion">
+                        <img src="/img/direccion.png">
+                        <label>Azcapotzalco, CDMX</label>
+                    </div>
+                    <div class="Telefono">
+                        <img src="/img/telefono.jpg">
+                        <label>+52 55-7321-0070</label> 
+                    </div>
+                    <div class="Correo">
+                        <img src="/img/correo.png">
+                        <label>emilsonck99@gmail.com</label>
+                    </div>   
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Somos un negocio dedicado a la venta de computadoras como de sus accesorios</p>
+                    <p>Tenemos aun gran compromiso con nuestros clientes y vendedores.</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>FULL FICTION</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 30000,
+                    disableInInteraction: false,
+                },
+                loop: true,
+              
+                // If we need pagination
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable:true,
+                },
+              
+                // Navigation arrows
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+        </script>
+    </body>
+    
+</html>
